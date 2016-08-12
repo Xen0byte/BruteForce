@@ -8,6 +8,7 @@ namespace CrackerX
     {
         private static string password;
         private static string result;
+        private static long permutations;
 
         public static ConsoleKeyInfo key;
 
@@ -61,8 +62,14 @@ namespace CrackerX
                     break;
             }
 
+            for (int i=1; i<=password.Length; i++)
+                {
+                permutations += (long)Math.Pow(charactersToTest.Length, i);
+                }
+
             var timeStarted = DateTime.Now;
-            Console.WriteLine("\nBrute Force Started - {0}\n", timeStarted.ToString());
+            Console.WriteLine("\nBrute Force Started - {0}", timeStarted.ToString("dd MMM yyyy, HH:mm:ss.fffffff"));
+            Console.WriteLine("Total Permutations: {0}\n", permutations);
 
             charactersToTestLength = charactersToTest.Length;
 
@@ -74,10 +81,10 @@ namespace CrackerX
                 startBruteForce(estimatedPasswordLength);
             }
 
-            Console.WriteLine("Password Matched. - {0}", DateTime.Now.ToString());
+            Console.WriteLine("Password Matched - {0}", DateTime.Now.ToString("dd.MM.yyyy, HH:mm:ss.fffffff"));
             Console.WriteLine("Time Passed: {0}", DateTime.Now.Subtract(timeStarted));
             Console.WriteLine("Resolved Password: {0}", result);
-            Console.WriteLine("Computed Keys: {0}", computedKeys);
+            Console.WriteLine("Permutations Computed: {0}", computedKeys);
 
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey(true);
