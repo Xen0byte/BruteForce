@@ -84,9 +84,9 @@ namespace BruteForce
             }
 
             //  Console.WriteLine();
-            Console.WriteLine("Passphrase Matched - {0}", DateTime.Now.ToString("dd.MM.yyyy, HH:mm:ss.fffffff"));
+            Console.WriteLine("Passphrase Matched - {0}", DateTime.Now.ToString("dd MMM yyyy, HH:mm:ss.fffffff"));
             Console.WriteLine("Time Passed: {0}", DateTime.Now.Subtract(timeStarted));
-            Console.WriteLine("Resolved Password: {0}", result);
+            Console.WriteLine("Resolved Passphrase: {0}", result);
             Console.WriteLine("Permutations Computed: {0}", computedKeys);
 
             Console.WriteLine("\nPress any key to exit...");
