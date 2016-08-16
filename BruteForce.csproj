@@ -7,8 +7,8 @@
     <ProjectGuid>{C8E0E101-B662-4F02-BBFE-9E9ADA11F180}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CrackerX</RootNamespace>
-    <AssemblyName>CrackerX</AssemblyName>
+    <RootNamespace>BruteForce</RootNamespace>
+    <AssemblyName>BruteForce</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
