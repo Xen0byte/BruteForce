@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrackerX", "CrackerX.csproj", "{C8E0E101-B662-4F02-BBFE-9E9ADA11F180}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BruteForce", "BruteForce.csproj", "{C8E0E101-B662-4F02-BBFE-9E9ADA11F180}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
